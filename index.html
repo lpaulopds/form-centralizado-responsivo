@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .form-container {
+            width: 100%;
+        }
+        form {
+            display: grid;
+            /* grid-template-columns: 1fr auto; */
+            gap: 0.5rem;
+            padding: 32px;
+        }
+        label {
+            grid-column: 1;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+        input {
+            display: block;    
+            width: 360px;
+            margin-top: 8px;
+            border: none;
+            border-bottom: 1px solid rgb(39, 39, 39);
+            padding: 8px;
+        }
+        input[type=submit] {
+            margin: 0 auto;
+            grid-row: 4/4;
+            border: none;
+            background: tomato;
+            border-radius: 8px;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        input[type=submit]:hover {
+            background: grey;
+
+        }
+        @media (max-width: 500px) {
+            input {
+                width: 270px;
+            }
+        }
+        @media (max-width: 320px) {
+            input {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form action="" method="post">
+            <label for="">Nome
+                <input type="text">
+            </label>
+            <label for="">Sobroneme
+                <input type="text">
+            </label>
+            <label for="">Endereço
+                <input type="text">
+            </label>
+            <input type="submit" value="Enviar Formulário">
+        </form>
+    </div>
+
+</body>
+
+</html>
